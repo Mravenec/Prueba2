@@ -7,7 +7,6 @@ package Customer;
 
 import java.sql.Date;
 import java.time.format.DecimalStyle;
-import javax.print.attribute.standard.DateTimeAtCompleted;
 
 /**
  *
@@ -109,15 +108,49 @@ public class CreateCustomer {
     private Boolean otherAddressVerified;//Optional.
 
     enum PayableType {//Optional.
-
+        /*
+         Check
+         WireTransfer
+         PaymentCard
+         DirectDeposit
+         OnHold
+         BankWire
+         DebitCardHold
+         Other100
+         */
     }
 
     enum TaxIDType {//Optional.
-
+        /*
+         SSN
+         EIN
+         OtherType3
+         OtherType4
+         OtherType5
+         OtherType6
+         OtherType7
+         OtherType8
+         OtherType9
+         OtherType10
+         OtherType11
+         OtherType12
+         OtherType13
+         OtherType14
+         OtherType15
+         OtherType16
+         OtherType17
+         OtherType18
+         OtherType19
+         OtherType20
+         */
     }
 
     enum Gender {//Optional. The customer's gender
-
+        /*
+         Unknown
+         Male
+         Female
+         */
     }
 
     public CreateCustomer(String firstName, String lastName, String company, Integer customerType, Integer customerStatus, String email, String phone, String phone2, String mobilePhone, String fax, String notes, String mainAddress1, String mainAddress2, String mainAddress3, String mainCity, String mainState, String mainZip, String mainCountry, String mainCounty, String mailAddress1, String mailAddress2, String mailAddress3, String mailCity, String mailState, String mailZip, String mailCountry, String mailCounty, String otherAddress1, String otherAddress2, String otherAddress3, String otherCity, String otherState, String otherZip, String otherCountry, String otherCounty, Boolean canLogin, String loginName, String loginPassword, Boolean insertEnrollerTree, Integer enrollerID, Boolean insertUnilevelTree, Integer sponsorID, Boolean useManualCustomerID, Integer manualCustomerID, String taxID, String salesTaxID, Date salesTaxExemptExpireDate, Boolean isSalesTaxExempt, Date birthDate, String field1, String field2, String field3, String field4, String field5, String field6, String field7, String field8, String field9, String field10, String field11, String field12, String field13, String field14, String field15, Boolean subscribeToBroadcasts, String subscribeFromIPAddress, String currencyCode, String payableToName, Date entryDate, Integer defaultWarehouseID, PayableType payableType, DecimalStyle checkThreshold, TaxIDType taxIDType, Integer languageID, Gender gender, String vatRegistration, Date date1, Date date2, Date date3, Date date4, Date date5, String middleName, String nameSuffix, Integer binaryPlacementPreference, Boolean useBinaryHoldingTank, Boolean mainAddressVerified, Boolean mailAddressVerified, Boolean otherAddressVerified) {
@@ -211,10 +244,7 @@ public class CreateCustomer {
         this.otherAddressVerified = otherAddressVerified;
     }
 
-    
     public CreateCustomer() {
     }
-
-    
 
 }

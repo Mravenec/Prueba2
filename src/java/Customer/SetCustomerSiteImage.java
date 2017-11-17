@@ -14,6 +14,7 @@ public class SetCustomerSiteImage {
     /*
      Setup public web site image for an existing customer.
      */
+    
     Integer CustomerID;//Unique identifier for a customer entity.
     String ImageName;//The image's file name.
     Byte[] ImageData;//The image's data.
