@@ -19,4 +19,12 @@ public class DequeueCustomerEvents {
     CustomerEventResponse
     */
     
+    
+    /*
+    See CustomerEventResponse
+    */
+    
+    /*
+    See CustomerEventField
+    */
 }
