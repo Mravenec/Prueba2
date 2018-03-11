@@ -12,11 +12,9 @@ import java.time.format.DecimalStyle;
  *
  * @author Mravenec
  */
-public class CreatePayment {
+class PaymentType {
     /*
-     Creates a new payment type using cash, money order etc.
-
-     Note: This request can participate in a transaction.
+     check CreatePayment 
      */
 
     private Integer orderID;
